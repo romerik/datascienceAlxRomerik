@@ -1,0 +1,224 @@
+html{
+    scroll-behavior: smooth;
+}
+body, main{
+    display: flex;
+}
+body{
+    flex-direction: column;
+}
+main{
+    flex-direction: row;
+    flex: auto
+}
+article{
+    flex: 2;
+}
+aside{
+    flex: 1;
+}
+article, aside{
+    overflow-y: auto;
+}
+.Mylogo{
+    width: 20%;
+    height: auto;
+    background-size: cover;
+}
+.welcome{
+    margin: 0%;
+    padding: 0%;
+    position: relative;
+    background-image: url("https://www.exasol.com/app/uploads/2020/06/Data_Science_Arch_Header-scaled.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+}
+.welcome::before{
+    position: absolute;
+    content: "Welcome to your Data Science School";
+    top: 4%;
+    width: 80%;
+    height: 20%;
+    right: 5%;
+    color: white;
+    font-size: 2.5rem;
+    margin: auto;
+    text-align: center;
+    line-height: 60px;
+}
+.child{
+    width: 25%;
+    height: auto;
+    background-color: rgb(190, 205, 255);
+    position: absolute;
+    top: 90%;
+    padding: 0;
+    margin: 0%;
+    z-index: 1000;
+    box-shadow: 0px 20px 90px black;
+}
+.c1{
+    left: 4%;
+}
+.c3{
+    right: 4%;
+}
+.child h2{
+    background-color: rgb(0, 35, 150);
+    font-size: 0.8em;
+    text-align: center;
+    color: white;
+    font-style: italic;
+    font-weight: bolder;
+    padding: 15px;
+}
+.child p{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.95em;
+}
+.learn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.l1, .l2, .l3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.l1{
+    margin-top: 40vh;
+    background-color: rgba(170, 170, 221, 0.575);
+}
+.l2{
+    background-color: rgba(34, 45, 202, 0.479);
+}
+.l3{
+    background-color: rgba(73, 15, 249, 0.237);
+}
+.learn img{
+    max-width: 40%;
+    height: auto;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.tweets h3{
+    background-color: rgba(190, 205, 255, 0.897);
+    text-align: center;
+    padding: 15px;
+}
+.tweetDS{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(190, 205, 255);
+}
+.more, .moreb{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    background-color: green;
+    width: 200px;
+    height: 25px;
+    font-size: 1.5em;
+}
+.contact, form{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+}
+.contact{
+    align-items: center;
+}
+form{
+    align-items: flex-start;
+}
+form p, form p *{
+    width: 100%;
+}
+input{
+    width: 100%;
+}
+.moreb{
+    height: 50px;
+    width: 100%;
+}
+.courses{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+}
+.course{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    padding: 20px;
+    color: black;
+    background-color: rgba(178, 181, 226, 0.336);
+    margin-bottom: 20px;
+    box-shadow: 2px 5px 10px black;
+}
+.name{
+    border-bottom: 3px solid rgb(10, 10, 10);
+}
+.name h3{
+    font-size: 1.2em;
+}
+.author{
+    display: flex;
+    align-items: center;
+}
+.author img{
+    border-radius: 50%;
+    width: 80px;
+    height: auto;
+    padding-right: 15px;
+}
+.person h5{
+    font-size: 0.85em;
+}
+.projecth3{
+    background-color: rgba(190, 205, 255, 0.897);
+    text-align: center;
+    padding: 15px;
+    font-size: 1em;
+}
+@media (max-width:500px)
+{
+    .name h3{
+        font-size: 1em;
+    }
+    .course{
+        width: 90%;
+    }
+    .author{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .person{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
